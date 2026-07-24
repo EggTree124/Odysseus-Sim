@@ -2,18 +2,18 @@
 
 [ext_resource type="Script" uid="uid://ho2rar7xcr5" path="res://player.gd" id="1_4flbx"]
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_uy4b6"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_uy4b6"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i1ro6"]
-
-[node name="Node3D" type="CharacterBody3D" unique_id=965652559]
+[node name="Player" type="CharacterBody3D" unique_id=965652559]
 script = ExtResource("1_4flbx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=732457563]
+shape = SubResource("CapsuleShape3D_uy4b6")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1460779100]
 mesh = SubResource("CapsuleMesh_uy4b6")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1467764322]
-shape = SubResource("CapsuleShape3D_i1ro6")
 
 [node name="Node3D" type="Node3D" parent="." unique_id=416552032]
 
