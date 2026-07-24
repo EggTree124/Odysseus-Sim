@@ -113,6 +113,18 @@ size = Vector3(23.673685, 34.842163, 0.5114746)
 [sub_resource type="BoxShape3D" id="BoxShape3D_eow3j"]
 size = Vector3(48.089283, 34.842163, 0.5114746)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_yj4r1"]
+size = Vector3(1.5585938, 34.51184, 12.42041)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vef74"]
+size = Vector3(1.5585938, 34.51184, 12.42041)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hve3p"]
+size = Vector3(1.5585938, 34.51184, 12.42041)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mfdv2"]
+size = Vector3(1.5585938, 34.51184, 12.42041)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1j5vl"]
 resource_name = "Material"
 cull_mode = 2
@@ -211,8 +223,24 @@ shape = SubResource("BoxShape3D_ryrav")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.009033, 17.310366, -192.19086)
 shape = SubResource("BoxShape3D_eow3j")
 
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="House/StaticBody3D" unique_id=925232721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.440178, 18.233456, -187.97726)
+shape = SubResource("BoxShape3D_yj4r1")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="House/StaticBody3D" unique_id=2023120484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.72902, 18.233456, -187.97726)
+shape = SubResource("BoxShape3D_vef74")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="House/StaticBody3D" unique_id=27049649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.403662, 18.233456, -187.97726)
+shape = SubResource("BoxShape3D_hve3p")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="House/StaticBody3D" unique_id=1059550743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.571616, 18.233456, -187.97726)
+shape = SubResource("BoxShape3D_mfdv2")
+
 [node name="Player" parent="." unique_id=965652559 instance=ExtResource("2_e2o6t")]
-transform = Transform3D(5.115, 0, 0, 0, 5.115, 0, 0, 0, 5.115, 5.6863003, 13.205977, 16.842339)
+transform = Transform3D(5.115, 0, 0, 0, 5.115, 0, 0, 0, 5.115, 5.6863003, 8.956468, 16.842339)
 
 [node name="fix-map" type="Node" parent="." unique_id=574688816]
 script = ExtResource("1_80nbo")
