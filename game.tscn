@@ -212,7 +212,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.009033, 17.310366, -192.1
 shape = SubResource("BoxShape3D_eow3j")
 
 [node name="Player" parent="." unique_id=965652559 instance=ExtResource("2_e2o6t")]
-transform = Transform3D(5.115, 0, 0, 0, 5.115, 0, 0, 0, 5.115, 5.6863003, 13.205977, -3.6391907)
+transform = Transform3D(5.115, 0, 0, 0, 5.115, 0, 0, 0, 5.115, 5.6863003, 13.205977, 16.842339)
 
 [node name="fix-map" type="Node" parent="." unique_id=574688816]
 script = ExtResource("1_80nbo")
