@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bx0uon6rgw5c8"]
+
+[ext_resource type="PackedScene" uid="uid://cnblmmajs77l" path="res://fix-map.blend" id="1_hfkix"]
+
+[node name="fix-map" unique_id=1212488808 instance=ExtResource("1_hfkix")]
