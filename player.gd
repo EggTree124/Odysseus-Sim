@@ -40,11 +40,14 @@ func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	var target_fov := 90 if direction != Vector3.ZERO else 75
-	$Node3D/Camera3D.fov = move_toward($Node3D/Camera3D.fov, target_fov, 50.0 * delta)
+	$Node3D/Camera3D.fov = move_toward($Node3D/Camera3D.fov, target_fov, 65.0 * delta)
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		$human_unpacked/AnimationPlayer.speed_scale = 1.5
+		$human_unpacked/AnimationPlayer.play("walk")
 	else:
+		$human_unpacked/AnimationPlayer.stop()
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
