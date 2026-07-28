@@ -47,6 +47,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		#shape
 	if Input.is_action_just_pressed("swing") and !attacking:
 		attacking = true
 		$human_unpacked/AnimationPlayer.play("slash")
