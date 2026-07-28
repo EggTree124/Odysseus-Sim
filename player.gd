@@ -8,7 +8,7 @@ const JUMP_VELOCITY = 10.0
 @export var max_pitch: float = 89.0
 
 @onready var camera_3d: Camera3D = $Node3D/Camera3D
-
+var attacking = false
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -44,11 +44,23 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
-		$human_unpacked/AnimationPlayer.speed_scale = 1.5
-		$human_unpacked/AnimationPlayer.play("walk")
 	else:
-		$human_unpacked/AnimationPlayer.stop()
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+	if Input.is_action_just_pressed("swing") and !attacking:
+		attacking = true
+		$human_unpacked/AnimationPlayer.play("slash")
+
+	if !attacking:
+		if direction:
+			$human_unpacked/AnimationPlayer.speed_scale = 1.5
+			$human_unpacked/AnimationPlayer.play("walk")
+		else:
+			$human_unpacked/AnimationPlayer.stop()
 
 	move_and_slide()
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	if anim_name == "slash":
+		attacking = false
