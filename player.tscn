@@ -222,7 +222,6 @@ tracks/0/keys = PackedFloat32Array(0, 1, -0.112245, 0, 0, 0.993681, 0.5, 1, -0.1
 [sub_resource type="Animation" id="Animation_onrkg"]
 resource_name = "slash"
 length = 1.3
-loop_mode = 1
 tracks/0/type = "rotation_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -302,13 +301,12 @@ animation = &"slash"
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hqtel"]
 animation = &"idle"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_sweqy"]
-filters = ["Armature/Skeleton3D:mixamorig_RightArm", "Armature/Skeleton3D:mixamorig_RightForeArm"]
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_onrkg"]
 
 [sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_2hs0m"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_i1ro6"]
-graph_offset = Vector2(-144.15114, 15.0164795)
+graph_offset = Vector2(-150.3904, 67.67852)
 nodes/output/position = Vector2(560, 186.66667)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_hqtel")
 nodes/Animation/position = Vector2(-120, 120)
@@ -316,11 +314,11 @@ nodes/Blend2/node = SubResource("AnimationNodeBlend2_2hs0m")
 nodes/Blend2/position = Vector2(120, 173.33333)
 "nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_onrkg")
 "nodes/Animation 2/position" = Vector2(-93.333336, 320)
-"nodes/Blend2 2/node" = SubResource("AnimationNodeBlend2_sweqy")
-"nodes/Blend2 2/position" = Vector2(386.66666, 200)
 "nodes/Animation 3/node" = SubResource("AnimationNodeAnimation_i3pqv")
 "nodes/Animation 3/position" = Vector2(173.33333, 440)
-node_connections = [&"output", 0, &"Blend2 2", &"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"Blend2 2", 0, &"Blend2", &"Blend2 2", 1, &"Animation 3"]
+nodes/Attack/node = SubResource("AnimationNodeOneShot_onrkg")
+nodes/Attack/position = Vector2(346.66666, 146.66667)
+node_connections = [&"output", 0, &"Attack", &"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"Attack", 0, &"Blend2", &"Attack", 1, &"Animation 3"]
 
 [node name="Player" type="CharacterBody3D" unique_id=965652559]
 script = ExtResource("1_4flbx")
@@ -654,6 +652,8 @@ root_node = NodePath("../human_unpacked")
 tree_root = SubResource("AnimationNodeBlendTree_i1ro6")
 anim_player = NodePath("../human_unpacked/AnimationPlayer")
 parameters/Blend2/blend_amount = 0.0
-"parameters/Blend2 2/blend_amount" = 0.0
+parameters/Attack/active = false
+parameters/Attack/internal_active = false
+parameters/Attack/request = 0
 
 [connection signal="animation_finished" from="human_unpacked/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
