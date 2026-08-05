@@ -8,12 +8,11 @@ const JUMP_VELOCITY = 10.0
 @export var max_pitch: float = 89.0
 
 @onready var camera_3d: Camera3D = $Node3D/Camera3D
-@onready var animation_tree: AnimationTree = $AnimationTree
+@onready var animation_player: AnimationPlayer = $human_unpacked/AnimationPlayer
+
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	animation_tree.active = true
-
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		# Yaw: Rotate character body left/right
@@ -50,11 +49,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 		#shape
-	if Input.is_action_just_pressed("swing"):
-		if Input.is_action_just_pressed("swing"):
-			animation_tree.set("parameters/Attack/request",AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
-	
-	var speed_ratio: float = clamp(Vector2(velocity.x, velocity.z).length() / SPEED,0.0, 1.0)
-	animation_tree["parameters/Blend2/blend_amount"] = speed_ratio
+	if Input.is_action_pressed("swing"):
+		animation_player.play("Attack_Slash_Light")
 	
 	move_and_slide()
