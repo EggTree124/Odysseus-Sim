@@ -8086,7 +8086,7 @@ bones/74/parent = 73
 bones/74/rest = Transform3D(0.99941415, -0.033931926, 0.0044679022, 0.02399559, 0.78779495, 0.61547023, -0.024403878, -0.61500245, 0.7881476, -0.00021518685, 10.874573, 0.00020428002)
 bones/74/enabled = true
 bones/74/position = Vector3(-0.00013757733, 10.874577, 0.00019155067)
-bones/74/rotation = Quaternion(0.09049515, -0.05027824, 0.42287531, 0.9002551)
+bones/74/rotation = Quaternion(0.19150248, -0.27844048, 0.52265465, 0.78270674)
 bones/74/scale = Vector3(1, 1.0000001, 1.0000001)
 bones/75/name = "CC_Base_R_UpperarmTwist01"
 bones/75/parent = 74
@@ -8107,7 +8107,7 @@ bones/77/parent = 74
 bones/77/rest = Transform3D(0.9953249, 0.08697548, 0.04200106, -0.083556764, 0.9935045, -0.07724671, -0.048446823, 0.07337608, 0.99612695, 0.00018028624, 25.747929, -0.00010123849)
 bones/77/enabled = true
 bones/77/position = Vector3(0.00021091296, 25.747929, -0.00011712601)
-bones/77/rotation = Quaternion(0.001227703, 0.0017801439, 0.0003587338, 0.9999977)
+bones/77/rotation = Quaternion(0.17374185, -0.16895099, -0.20345524, 0.9486176)
 bones/77/scale = Vector3(1.0000002, 1, 1)
 bones/78/name = "CC_Base_R_ForearmTwist01"
 bones/78/parent = 77
@@ -8135,7 +8135,7 @@ bones/81/parent = 77
 bones/81/rest = Transform3D(0.99135536, 0.121137924, 0.050398752, -0.12941791, 0.8396783, 0.52743804, 0.021574024, -0.5294011, 0.84809697, 5.5909157e-05, 21.512306, 0.0002770424)
 bones/81/enabled = true
 bones/81/position = Vector3(8.361677e-05, 21.512337, 0.00027839714)
-bones/81/rotation = Quaternion(-0.058158506, -0.10115334, -0.024748322, 0.99286115)
+bones/81/rotation = Quaternion(-0.03084558, 0.26968738, 0.07380977, 0.9596194)
 bones/81/scale = Vector3(0.99999994, 0.9999998, 0.99999964)
 bones/82/name = "CC_Base_R_Mid1"
 bones/82/parent = 81
@@ -8314,12 +8314,12 @@ metadata/sbp_blender_origin = Vector3(0, 0, 0)
 metadata/blender = &"human_unpacked"
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="human_unpacked/Armature/Skeleton3D" unique_id=2105413471]
-transform = Transform3D(-0.740057, -0.67058414, 0.0513054, 0.64492357, -0.7292332, -0.22867453, 0.19075924, -0.13614413, 0.9721496, -49.704063, 0.7969971, -14.493931)
+transform = Transform3D(-0.84792626, -0.36671868, 0.38280275, 0.45340568, -0.8758479, 0.16526741, 0.27467057, 0.3136996, 0.9089269, -38.5312, -3.4871998, -5.960313)
 bone_name = "CC_Base_R_Hand"
 bone_idx = 81
 
 [node name="Cube" type="MeshInstance3D" parent="human_unpacked/Armature/Skeleton3D/BoneAttachment3D" unique_id=610173398]
-transform = Transform3D(11.667631, 8.703234, 3.622153, 2.8260992, 2.2691097, -14.555557, -8.993303, 12.004362, 0.1252656, -19.061829, 6.2831783, 12.321548)
+transform = Transform3D(10.4386425, 7.7864976, 3.240621, 2.5284164, 2.030098, -13.022374, -8.046009, 10.739909, 0.11206794, -15.777859, 3.3056335, 12.42944)
 mesh = SubResource("ArrayMesh_dhs25")
 metadata/blender = &"sword_unpacked"
 
