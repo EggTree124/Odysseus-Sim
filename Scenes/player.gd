@@ -35,7 +35,7 @@ func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	var target_fov := 90 if direction != Vector3.ZERO else 75
-	$Node3D/Camera3D.fov = move_toward($Node3D/Camera3D.fov, target_fov, 50.0 * delta) #fov type shit
+	$Node3D/Camera3D.fov = move_toward($Node3D/Camera3D.fov, target_fov, 50.0 * delta) #fov type shits
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
