@@ -7587,7 +7587,7 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i1ro6"]
-radius = 0.5180664
+radius = 0.273
 
 [node name="Player" type="CharacterBody3D" unique_id=741990877]
 script = ExtResource("1_cvnsp")
@@ -8128,8 +8128,8 @@ bones/74/name = "CC_Base_R_Upperarm"
 bones/74/parent = 73
 bones/74/rest = Transform3D(0.99941415, -0.033931926, 0.0044679022, 0.02399559, 0.78779495, 0.61547023, -0.024403878, -0.61500245, 0.7881476, -0.00021518685, 10.874573, 0.00020428002)
 bones/74/enabled = true
-bones/74/position = Vector3(-0.00014139195, 10.874577, 0.00019155815)
-bones/74/rotation = Quaternion(0.0969371, -0.06616256, 0.5510786, 0.82615864)
+bones/74/position = Vector3(-0.00013757733, 10.874577, 0.00019155067)
+bones/74/rotation = Quaternion(0.8104617, -0.052529227, 0.18282484, 0.5540465)
 bones/74/scale = Vector3(1.0000001, 1.0000001, 1.0000002)
 bones/75/name = "CC_Base_R_UpperarmTwist01"
 bones/75/parent = 74
@@ -8149,7 +8149,7 @@ bones/77/name = "CC_Base_R_Forearm"
 bones/77/parent = 74
 bones/77/rest = Transform3D(0.9953249, 0.08697548, 0.04200106, -0.083556764, 0.9935045, -0.07724671, -0.048446823, 0.07337608, 0.99612695, 0.00018028624, 25.747929, -0.00010123849)
 bones/77/enabled = true
-bones/77/position = Vector3(0.00018028624, 25.747929, -0.00010123849)
+bones/77/position = Vector3(0.00021091296, 25.747929, -0.00011712601)
 bones/77/rotation = Quaternion(0.0012277134, 0.0017801325, 0.00035871827, 0.9999977)
 bones/77/scale = Vector3(1, 0.9999998, 0.99999994)
 bones/78/name = "CC_Base_R_ForearmTwist01"
@@ -8163,8 +8163,8 @@ bones/79/name = "CC_Base_R_ForearmTwist02"
 bones/79/parent = 78
 bones/79/rest = Transform3D(0.99644804, -4.2150996e-06, 0.08420893, 3.051633e-06, 1, 1.3945137e-05, -0.08420893, -1.36386325e-05, 0.996448, 7.276144e-05, 10.756211, 0.000115692616)
 bones/79/enabled = true
-bones/79/position = Vector3(0.00010162261, 10.756215, 0.00016799427)
-bones/79/rotation = Quaternion(-4.708201e-06, 0.028214995, 2.003707e-06, 0.9996019)
+bones/79/position = Vector3(0.00010443482, 10.756218, 0.00016791321)
+bones/79/rotation = Quaternion(-4.7089525e-06, 0.028214999, 1.9779843e-06, 0.99960196)
 bones/79/scale = Vector3(0.99999994, 0.9999999, 1)
 bones/80/name = "CC_Base_R_ElbowShareBone"
 bones/80/parent = 77
@@ -8177,7 +8177,7 @@ bones/81/name = "CC_Base_R_Hand"
 bones/81/parent = 77
 bones/81/rest = Transform3D(0.99135536, 0.121137924, 0.050398752, -0.12941791, 0.8396783, 0.52743804, 0.021574024, -0.5294011, 0.84809697, 5.5909157e-05, 21.512306, 0.0002770424)
 bones/81/enabled = true
-bones/81/position = Vector3(5.5909157e-05, 21.512306, 0.0002770424)
+bones/81/position = Vector3(8.361677e-05, 21.512337, 0.00027839714)
 bones/81/rotation = Quaternion(-0.017598469, -0.26845315, -0.011997725, 0.9630573)
 bones/81/scale = Vector3(1, 1, 0.9999998)
 bones/82/name = "CC_Base_R_Mid1"
@@ -8357,7 +8357,7 @@ metadata/sbp_blender_origin = Vector3(0, 0, 0)
 metadata/blender = &"human_unpacked"
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="human_unpacked/Armature/Skeleton3D" unique_id=396774991]
-transform = Transform3D(-0.7870739, -0.4070436, 0.46349812, 0.3357446, -0.91301715, -0.23167744, 0.5174848, -0.026730318, 0.85527474, -37.69705, -6.3473606, -13.275584)
+transform = Transform3D(0.32056135, 0.13876542, 0.9370084, 0.9239855, -0.2635961, -0.2770688, 0.20854422, 0.95459974, -0.21271595, -11.784957, 23.844984, 31.298971)
 bone_name = "CC_Base_R_Hand"
 bone_idx = 81
 
@@ -8386,5 +8386,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7391179, -0.07794678)
 current = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=763128222]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9248934, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9408846, 0)
 shape = SubResource("CapsuleShape3D_i1ro6")
