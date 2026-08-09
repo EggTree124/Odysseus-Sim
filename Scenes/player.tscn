@@ -799,6 +799,28 @@ shadow_mesh = SubResource("ArrayMesh_74tb8")
 
 [sub_resource type="Animation" id="Animation_cvnsp"]
 resource_name = "Attack_Slash_Heavy"
+length = 2.0
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Armature/Skeleton3D:CC_Base_R_Clavicle")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.045056332, -0.11907682, 0.6993347, 0.70336455, 0.52, 1, -0.058665782, -0.067567036, 0.39608288, 0.9138443, 1.9666667, 1, -0.045056332, -0.11907682, 0.6993347, 0.70336455)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Armature/Skeleton3D:CC_Base_R_Forearm")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0.45, 1, 0.0012277134, 0.0017801342, 0.00035872578, 0.9999977, 0.73, 1, 0.79085547, -0.36472988, -0.0014150589, 0.49144456, 1.9333333, 1, 0.0012277134, 0.0017801342, 0.00035872578, 0.9999977)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Armature/Skeleton3D:CC_Base_R_Hand")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0.59999996, 1, -0.017598467, -0.26845312, -0.011997717, 0.9630573, 0.8333333, 1, -0.2806475, 0.057632916, -0.0888343, 0.9539517, 1.9333333, 1, -0.017598467, -0.26845312, -0.011997717, 0.9630573)
 
 [sub_resource type="Animation" id="Animation_o2loj"]
 resource_name = "Attack_Slash_Light"
@@ -6571,6 +6593,30 @@ tracks/136/interp = 1
 tracks/136/loop_wrap = true
 tracks/136/keys = PackedFloat32Array(0, 1, 1.43295765e-05, 1.6740612, 9.959695e-07)
 
+[sub_resource type="Animation" id="Animation_6t5aa"]
+length = 0.001
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Armature/Skeleton3D:CC_Base_R_Clavicle")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.045056332, -0.11907682, 0.6993347, 0.70336455)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Armature/Skeleton3D:CC_Base_R_Forearm")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.0012277134, 0.0017801342, 0.00035872578, 0.9999977)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Armature/Skeleton3D:CC_Base_R_Hand")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.017598467, -0.26845312, -0.011997717, 0.9630573)
+
 [sub_resource type="Animation" id="Animation_hq0s1"]
 resource_name = "Walk"
 length = 0.9
@@ -7536,6 +7582,7 @@ _data = {
 &"Key_003|0_T-Pose": SubResource("Animation_gtgg7"),
 &"Key_004|0_T-Pose": SubResource("Animation_ec731"),
 &"Key|0_T-Pose": SubResource("Animation_bqimq"),
+&"RESET": SubResource("Animation_6t5aa"),
 &"Walk": SubResource("Animation_hq0s1")
 }
 
@@ -8074,9 +8121,9 @@ bones/73/name = "CC_Base_R_Clavicle"
 bones/73/parent = 35
 bones/73/rest = Transform3D(-0.04628503, -0.75793725, 0.6506831, 0.9930088, -0.10571814, -0.052508354, 0.10858708, 0.64370364, 0.7575316, -9.199297, 19.347824, -6.438816)
 bones/73/enabled = true
-bones/73/position = Vector3(-9.199297, 19.347824, -6.438816)
-bones/73/rotation = Quaternion(-0.045056332, -0.11907682, 0.6993347, 0.70336455)
-bones/73/scale = Vector3(0.99999994, 0.99999976, 0.9999999)
+bones/73/position = Vector3(-9.199298, 19.347832, -6.438814)
+bones/73/rotation = Quaternion(-0.04505636, -0.11907681, 0.6993347, 0.70336455)
+bones/73/scale = Vector3(0.9999998, 1, 0.9999999)
 bones/74/name = "CC_Base_R_Upperarm"
 bones/74/parent = 73
 bones/74/rest = Transform3D(0.99941415, -0.033931926, 0.0044679022, 0.02399559, 0.78779495, 0.61547023, -0.024403878, -0.61500245, 0.7881476, -0.00021518685, 10.874573, 0.00020428002)
@@ -8102,9 +8149,9 @@ bones/77/name = "CC_Base_R_Forearm"
 bones/77/parent = 74
 bones/77/rest = Transform3D(0.9953249, 0.08697548, 0.04200106, -0.083556764, 0.9935045, -0.07724671, -0.048446823, 0.07337608, 0.99612695, 0.00018028624, 25.747929, -0.00010123849)
 bones/77/enabled = true
-bones/77/position = Vector3(0.00021307183, 25.747923, -0.000118096534)
-bones/77/rotation = Quaternion(0.0012277134, 0.0017801342, 0.00035872578, 0.9999977)
-bones/77/scale = Vector3(1.0000001, 0.99999994, 1)
+bones/77/position = Vector3(0.00018028624, 25.747929, -0.00010123849)
+bones/77/rotation = Quaternion(0.0012277134, 0.0017801325, 0.00035871827, 0.9999977)
+bones/77/scale = Vector3(1, 0.9999998, 0.99999994)
 bones/78/name = "CC_Base_R_ForearmTwist01"
 bones/78/parent = 77
 bones/78/rest = Transform3D(0.99888307, -8.8214694e-07, -0.047249403, 7.2354067e-07, 0.9999998, -3.3738932e-06, 0.047249403, 3.3359374e-06, 0.99888307, -6.277487e-05, -3.2052398e-05, 1.5497208e-06)
@@ -8130,9 +8177,9 @@ bones/81/name = "CC_Base_R_Hand"
 bones/81/parent = 77
 bones/81/rest = Transform3D(0.99135536, 0.121137924, 0.050398752, -0.12941791, 0.8396783, 0.52743804, 0.021574024, -0.5294011, 0.84809697, 5.5909157e-05, 21.512306, 0.0002770424)
 bones/81/enabled = true
-bones/81/position = Vector3(8.361677e-05, 21.512337, 0.00027839714)
-bones/81/rotation = Quaternion(-0.017598467, -0.26845312, -0.011997717, 0.9630573)
-bones/81/scale = Vector3(0.99999994, 0.9999998, 0.99999964)
+bones/81/position = Vector3(5.5909157e-05, 21.512306, 0.0002770424)
+bones/81/rotation = Quaternion(-0.017598469, -0.26845315, -0.011997725, 0.9630573)
+bones/81/scale = Vector3(1, 1, 0.9999998)
 bones/82/name = "CC_Base_R_Mid1"
 bones/82/parent = 81
 bones/82/rest = Transform3D(0.99812526, -0.0602545, 0.010738623, 0.058705557, 0.892911, -0.4463898, 0.017308353, 0.44618338, 0.8947743, 0.2663589, 5.875655, 2.5717528)
@@ -8310,7 +8357,7 @@ metadata/sbp_blender_origin = Vector3(0, 0, 0)
 metadata/blender = &"human_unpacked"
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="human_unpacked/Armature/Skeleton3D" unique_id=396774991]
-transform = Transform3D(-0.78707373, -0.40704343, 0.46349797, 0.3357446, -0.91301715, -0.2316775, 0.5174848, -0.026730329, 0.85527456, -37.69711, -6.347374, -13.2755995)
+transform = Transform3D(-0.7870739, -0.4070436, 0.46349812, 0.3357446, -0.91301715, -0.23167744, 0.5174848, -0.026730318, 0.85527474, -37.69705, -6.3473606, -13.275584)
 bone_name = "CC_Base_R_Hand"
 bone_idx = 81
 
