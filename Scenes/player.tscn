@@ -797,6 +797,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_74tb8")
 
+[sub_resource type="Animation" id="Animation_cvnsp"]
+resource_name = "Attack_Slash_Heavy"
+
 [sub_resource type="Animation" id="Animation_o2loj"]
 resource_name = "Attack_Slash_Light"
 length = 0.96666664
@@ -7526,6 +7529,7 @@ tracks/135/keys = PackedFloat32Array(0, 1, 1.3929421e-05, 1.6740619, -1.8088365e
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_13n5y"]
 _data = {
+&"Attack_Slash_Heavy": SubResource("Animation_cvnsp"),
 &"Attack_Slash_Light": SubResource("Animation_o2loj"),
 &"Key_001|0_T-Pose": SubResource("Animation_cqxyt"),
 &"Key_002|0_T-Pose": SubResource("Animation_mxqbh"),
@@ -8077,9 +8081,9 @@ bones/74/name = "CC_Base_R_Upperarm"
 bones/74/parent = 73
 bones/74/rest = Transform3D(0.99941415, -0.033931926, 0.0044679022, 0.02399559, 0.78779495, 0.61547023, -0.024403878, -0.61500245, 0.7881476, -0.00021518685, 10.874573, 0.00020428002)
 bones/74/enabled = true
-bones/74/position = Vector3(-0.00013757733, 10.874577, 0.00019155067)
+bones/74/position = Vector3(-0.00014139195, 10.874577, 0.00019155815)
 bones/74/rotation = Quaternion(0.0969371, -0.06616256, 0.5510786, 0.82615864)
-bones/74/scale = Vector3(1, 1.0000001, 1.0000001)
+bones/74/scale = Vector3(1.0000001, 1.0000001, 1.0000002)
 bones/75/name = "CC_Base_R_UpperarmTwist01"
 bones/75/parent = 74
 bones/75/rest = Transform3D(0.99997586, -5.667011e-07, -0.0069502075, 5.608542e-07, 1.0000001, -8.4319817e-07, 0.0069502075, 8.3927983e-07, 0.99997586, -5.813464e-05, -1.4002435e-06, -2.2351742e-07)
@@ -8098,9 +8102,9 @@ bones/77/name = "CC_Base_R_Forearm"
 bones/77/parent = 74
 bones/77/rest = Transform3D(0.9953249, 0.08697548, 0.04200106, -0.083556764, 0.9935045, -0.07724671, -0.048446823, 0.07337608, 0.99612695, 0.00018028624, 25.747929, -0.00010123849)
 bones/77/enabled = true
-bones/77/position = Vector3(0.00021091296, 25.747929, -0.00011712601)
+bones/77/position = Vector3(0.00021307183, 25.747923, -0.000118096534)
 bones/77/rotation = Quaternion(0.0012277134, 0.0017801342, 0.00035872578, 0.9999977)
-bones/77/scale = Vector3(1.0000002, 1, 1)
+bones/77/scale = Vector3(1.0000001, 0.99999994, 1)
 bones/78/name = "CC_Base_R_ForearmTwist01"
 bones/78/parent = 77
 bones/78/rest = Transform3D(0.99888307, -8.8214694e-07, -0.047249403, 7.2354067e-07, 0.9999998, -3.3738932e-06, 0.047249403, 3.3359374e-06, 0.99888307, -6.277487e-05, -3.2052398e-05, 1.5497208e-06)
@@ -8112,9 +8116,9 @@ bones/79/name = "CC_Base_R_ForearmTwist02"
 bones/79/parent = 78
 bones/79/rest = Transform3D(0.99644804, -4.2150996e-06, 0.08420893, 3.051633e-06, 1, 1.3945137e-05, -0.08420893, -1.36386325e-05, 0.996448, 7.276144e-05, 10.756211, 0.000115692616)
 bones/79/enabled = true
-bones/79/position = Vector3(0.00010443482, 10.756218, 0.00016791321)
-bones/79/rotation = Quaternion(-4.7089525e-06, 0.028214999, 1.9779843e-06, 0.99960196)
-bones/79/scale = Vector3(0.99999994, 1, 0.9999999)
+bones/79/position = Vector3(0.00010162261, 10.756215, 0.00016799427)
+bones/79/rotation = Quaternion(-4.708201e-06, 0.028214995, 2.003707e-06, 0.9996019)
+bones/79/scale = Vector3(0.99999994, 0.9999999, 1)
 bones/80/name = "CC_Base_R_ElbowShareBone"
 bones/80/parent = 77
 bones/80/rest = Transform3D(0.993298, -0.0917928, -0.070235215, 0.09719649, 0.9922169, 0.07783433, 0.06254396, -0.08413932, 0.9944891, -6.274879e-05, -3.2126904e-05, 9.536743e-07)
@@ -8306,7 +8310,7 @@ metadata/sbp_blender_origin = Vector3(0, 0, 0)
 metadata/blender = &"human_unpacked"
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="human_unpacked/Armature/Skeleton3D" unique_id=396774991]
-transform = Transform3D(-0.78707373, -0.40704343, 0.46349797, 0.3357446, -0.9130172, -0.23167749, 0.5174847, -0.026730327, 0.8552745, -37.69711, -6.347378, -13.275599)
+transform = Transform3D(-0.78707373, -0.40704343, 0.46349797, 0.3357446, -0.91301715, -0.2316775, 0.5174848, -0.026730329, 0.85527456, -37.69711, -6.347374, -13.2755995)
 bone_name = "CC_Base_R_Hand"
 bone_idx = 81
 
