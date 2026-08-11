@@ -28,7 +28,8 @@ shadow_enabled = true
 environment = SubResource("Environment_3dryh")
 
 [node name="Node3D3" parent="." unique_id=286545213 instance=ExtResource("3_wrm1d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1435952, 1.0497694, -1.1193056)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1435952, 4.459838, -1.1193056)
+mass = 0.006
 
 [node name="Node3D4" parent="." unique_id=564030641 instance=ExtResource("3_wrm1d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7007561, 2.0497694, -0.9688182)

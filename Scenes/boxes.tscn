@@ -2,12 +2,17 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_i1ro6"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o3lmo"]
+albedo_color = Color(0, 0, 0, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_uy4b6"]
 
 [node name="Node3D" type="RigidBody3D" unique_id=286545213]
+mass = 0.2
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=231567593]
 mesh = SubResource("BoxMesh_i1ro6")
+surface_material_override/0 = SubResource("StandardMaterial3D_o3lmo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1588614254]
 shape = SubResource("BoxShape3D_uy4b6")

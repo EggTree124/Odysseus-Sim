@@ -6,7 +6,7 @@ const JUMP_VELOCITY = 4.5
 @export var max_pitch: float = 89.0
 
 @onready var camera_3d: Camera3D = $Node3D/Camera3D
-
+var has_played = false
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 func _unhandled_input(event: InputEvent) -> void:
@@ -42,5 +42,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-##NOOO
+	if Input.is_action_just_pressed("swing"):
+		$human_unpacked/AnimationPlayer.play("Attack_Slash_Light")
+		
 	move_and_slide()

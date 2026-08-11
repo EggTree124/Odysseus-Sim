@@ -8338,7 +8338,7 @@ metadata/sbp_blender_origin = Vector3(0, 0, 0)
 metadata/blender = &"human_unpacked"
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="human_unpacked/Armature/Skeleton3D" unique_id=396774991]
-transform = Transform3D(-0.43137705, -0.41287613, 0.8021516, 0.22707736, -0.91019875, -0.34637243, 0.87312645, 0.032733317, 0.48639372, -37.583965, -6.3536873, -11.38295)
+transform = Transform3D(-0.7870739, -0.4070437, 0.46349812, 0.3357446, -0.9130174, -0.23167746, 0.5174848, -0.02673031, 0.85527474, -37.69712, -6.347374, -13.275598)
 bone_name = "CC_Base_R_Hand"
 bone_idx = 81
 
@@ -8363,7 +8363,7 @@ metadata/blender_unpacked = 0
 [node name="Node3D" type="Node3D" parent="." unique_id=451297924]
 
 [node name="Camera3D" type="Camera3D" parent="Node3D" unique_id=1597795498]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7391179, -0.07794678)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.012065768, 1.6526037, -0.11304155)
 current = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=763128222]
